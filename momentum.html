@@ -250,8 +250,8 @@
             </footer>
         </div>
 
-        <!-- Stats View -->
-        <div id="stats-view" class="page-view container mx-auto max-w-lg p-4 hidden">
+        <!-- Journey View -->
+        <div id="journey-view" class="page-view container mx-auto max-w-lg p-4 hidden">
              <div class="card rounded-xl p-6 shadow-lg mb-6">
                 <div class="flex justify-between items-center mb-4">
                     <h2 class="text-2xl font-bold text-white">Productivity Stats</h2>
@@ -372,7 +372,7 @@
                         </div>
                     </div>
                     <div class="mt-4 pt-4 border-t border-[#30363D] flex justify-between items-center">
-                         <p class="text-lg font-bold flex items-center gap-2"><i data-lucide="gem" class="w-5 h-5 text-teal-400"></i> 100</p>
+                         <p class="text-lg font-bold flex items-center gap-2"><i data-lucide="gem" class="w-5 h-5 text-teal-400"></i> 50</p>
                          <button id="buy-streak-freeze-btn" class="primary-btn text-white font-bold py-2 px-5 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none">Buy</button>
                     </div>
                 </div>
@@ -428,6 +428,8 @@
                             <button class="bg-thumbnail w-full h-16 rounded-md bg-cover bg-center" data-bg="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" style="background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80')"></button>
                             <button class="bg-thumbnail w-full h-16 rounded-md bg-cover bg-center" data-bg="https://images.unsplash.com/photo-1506280489332-8c838e4a45a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" style="background-image: url('https://images.unsplash.com/photo-1506280489332-8c838e4a45a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')"></button>
                             <button class="bg-thumbnail w-full h-16 rounded-md bg-cover bg-center" data-bg="https://images.unsplash.com/photo-1536633973623-61783353683a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" style="background-image: url('https://images.unsplash.com/photo-1536633973623-61783353683a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"></button>
+                            <button class="bg-thumbnail w-full h-16 rounded-md bg-cover bg-center" data-bg="https://images.unsplash.com/photo-1554189097-9e36506f3604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="background-image: url('https://images.unsplash.com/photo-1554189097-9e36506f3604?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></button>
+                            <button class="bg-thumbnail w-full h-16 rounded-md bg-cover bg-center" data-bg="https://images.unsplash.com/photo-1488866022504-f2584929ca5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="background-image: url('https://images.unsplash.com/photo-1488866022504-f2584929ca5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></button>
                          </div>
                          <div class="flex gap-2">
                              <input type="text" id="custom-bg-input" class="input-base w-full rounded-lg px-3 py-2" placeholder="Paste image URL...">
@@ -443,7 +445,7 @@
     <nav id="bottom-nav" class="fixed bottom-0 left-0 right-0 bg-opacity-70 backdrop-blur-lg bg-[#161B22] border-t border-[#30363D]">
         <div class="flex justify-around max-w-lg mx-auto">
             <button data-view="today" class="nav-btn active flex-1 py-4 px-2 text-center font-semibold text-gray-400 transition border-t-2 border-transparent">Today</button>
-            <button data-view="stats" class="nav-btn flex-1 py-4 px-2 text-center font-semibold text-gray-400 transition border-t-2 border-transparent">Stats</button>
+            <button data-view="journey" class="nav-btn flex-1 py-4 px-2 text-center font-semibold text-gray-400 transition border-t-2 border-transparent">Journey</button>
             <button data-view="fitness" class="nav-btn flex-1 py-4 px-2 text-center font-semibold text-gray-400 transition border-t-2 border-transparent">Fitness</button>
             <button data-view="shop" class="nav-btn flex-1 py-4 px-2 text-center font-semibold text-gray-400 transition border-t-2 border-transparent">Shop</button>
             <button data-view="settings" class="nav-btn flex-1 py-4 px-2 text-center font-semibold text-gray-400 transition border-t-2 border-transparent">Settings</button>
@@ -470,7 +472,7 @@
         // Page elements
         const pageContainer = document.getElementById('page-container');
         const bottomNav = document.getElementById('bottom-nav');
-        // Stats elements
+        // Journey elements
         const journeyList = document.getElementById('journey-list');
         const journeyEmptyState = document.getElementById('journey-empty-state');
         const achievementsList = document.getElementById('achievements-list');
@@ -572,6 +574,9 @@
             'firstTask': { name: 'First Step', description: 'Complete your first task.', reward: 10, icon: 'footprints' },
             'streakStarter': { name: 'On a Roll', description: 'Achieve a 3-day streak.', reward: 25, icon: 'flame' },
             'streakMaster': { name: 'Unstoppable', description: 'Achieve a 7-day streak.', reward: 100, icon: 'trophy' },
+            'streakAdept': { name: 'Habit Builder', description: 'Achieve a 21-day streak.', reward: 200, icon: 'calendar-check' },
+            'streakExpert': { name: 'Consistency King', description: 'Achieve a 63-day streak.', reward: 500, icon: 'crown' },
+            'streakLegend': { name: 'Momentum Legend', description: 'Achieve a 100-day streak.', reward: 1000, icon: 'shield-check' },
             'taskNovice': { name: 'Task Tackler', description: 'Complete 10 tasks.', reward: 20, icon: 'target' },
             'wellbeingWatcher': { name: 'Mind & Body', description: 'Log fitness data for 3 days in a row.', reward: 30, icon: 'heart-pulse' }
         };
@@ -719,24 +724,42 @@
             const secs = seconds % 60;
             return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
         }
-
-        function renderSuggestions() {
+        
+        function renderSuggestions(suggestions = defaultTasks, type = 'default') {
             suggestionsContainer.innerHTML = '';
-            const title = document.createElement('h3');
-            title.className = "text-center font-semibold text-gray-300 mb-3";
-            title.textContent = "Momentum Starters";
-            suggestionsContainer.appendChild(title);
+            if (suggestions.length === 0) return;
             
+            const card = document.createElement('div');
+            card.className = 'card rounded-xl p-4';
+
+            const header = document.createElement('div');
+            header.className = 'flex justify-between items-center mb-3';
+            
+            const title = document.createElement('h3');
+            title.className = "font-semibold text-gray-300";
+            title.textContent = type === 'default' ? 'Momentum Starters' : 'AI Suggestions';
+            header.appendChild(title);
+
+            if (type === 'ai') {
+                const clearBtn = document.createElement('button');
+                clearBtn.id = 'clear-ai-suggestions';
+                clearBtn.className = 'text-sm text-red-400 hover:text-red-500';
+                clearBtn.textContent = 'Clear';
+                header.appendChild(clearBtn);
+            }
+            card.appendChild(header);
+
             const buttonGrid = document.createElement('div');
             buttonGrid.className = "grid grid-cols-2 gap-3";
             
-            defaultTasks.forEach(taskText => {
+            suggestions.forEach(taskText => {
                 const button = document.createElement('button');
                 button.className = "suggestion-btn w-full bg-[#161B22] border border-[#30363D] hover:border-teal-400 text-white text-sm font-medium py-3 px-2 rounded-lg transition text-left";
                 button.textContent = taskText;
                 buttonGrid.appendChild(button);
             });
-            suggestionsContainer.appendChild(buttonGrid);
+            card.appendChild(buttonGrid);
+            suggestionsContainer.appendChild(card);
         }
 
         function renderTasks() {
@@ -747,8 +770,10 @@
                 emptyState.style.display = 'flex';
                 suggestionsContainer.classList.remove('hidden');
             } else {
-                suggestionsContainer.innerHTML = '';
-                suggestionsContainer.classList.add('hidden');
+                if(suggestionsContainer.querySelector('#clear-ai-suggestions') === null) {
+                    suggestionsContainer.innerHTML = '';
+                    suggestionsContainer.classList.add('hidden');
+                }
                 emptyState.style.display = 'none';
             }
 
@@ -875,7 +900,7 @@
             }
         }
 
-        function renderStatsView() {
+        function renderJourneyView() {
             const completedDays = Object.entries(state.completionHistory)
                 .filter(([_, count]) => count >= state.streakGoal)
                 .map(([date, count]) => ({ date, count }))
@@ -974,7 +999,7 @@
 
         function renderShopView() {
             streakFreezeCountEl.textContent = state.streakFreezes;
-            buyStreakFreezeBtn.disabled = state.gems < 100;
+            buyStreakFreezeBtn.disabled = state.gems < 50;
             lucide.createIcons();
         }
 
@@ -1004,7 +1029,7 @@
             });
 
             if(shouldRenderContent) {
-                if (viewName === 'stats') renderStatsView();
+                if (viewName === 'journey') renderJourneyView();
                 if (viewName === 'settings') renderSettingsView();
                 if (viewName === 'fitness') renderFitnessView();
                 if (viewName === 'shop') renderShopView();
@@ -1138,6 +1163,19 @@
             if (!state.achievements['streakMaster'] && state.streak >= 7) {
                 newAchievements.push('streakMaster');
             }
+            // Streak Adept
+            if (!state.achievements['streakAdept'] && state.streak >= 21) {
+                newAchievements.push('streakAdept');
+            }
+            // Streak Expert
+            if (!state.achievements['streakExpert'] && state.streak >= 63) {
+                newAchievements.push('streakExpert');
+            }
+            // Streak Legend
+            if (!state.achievements['streakLegend'] && state.streak >= 100) {
+                newAchievements.push('streakLegend');
+            }
+
 
             newAchievements.forEach(id => {
                 state.achievements[id] = true;
@@ -1233,7 +1271,9 @@
         }
 
         function updateCompletionHistory(task) {
-             task.completionTimestamp = new Date().toISOString();
+            if (task) {
+                task.completionTimestamp = new Date().toISOString();
+            }
             const today = getTodayDateString();
             const completedTodayCount = state.tasks.filter(t => t.completed).length;
             state.completionHistory[today] = completedTodayCount;
@@ -1290,7 +1330,7 @@
 
         function pauseTimer(index) {
             const task = state.tasks[index];
-            if (!task.isTimerActive) return;
+            if (!task || !task.isTimerActive) return;
 
             clearInterval(task.timerId);
             task.isTimerActive = false;
@@ -1384,20 +1424,7 @@
                 if (jsonText) {
                     const subTasks = JSON.parse(jsonText);
                     if (Array.isArray(subTasks)) {
-                        subTasks.forEach(taskText => {
-                            const duration = parseDuration(taskText);
-                            const newTask = { text: taskText, completed: false, proof: null, proofFile: null };
-                            if (duration) {
-                                newTask.durationInSeconds = duration;
-                                newTask.remainingSeconds = duration;
-                                newTask.timerId = null;
-                                newTask.isTimerActive = false;
-                            }
-                            state.tasks.push(newTask);
-                        });
-                        taskInput.value = ''; 
-                        saveState(); 
-                        renderAll();
+                        renderSuggestions(subTasks, 'ai');
                     }
                 }
             } catch (error) { 
@@ -1429,7 +1456,7 @@
         }
 
         function applyBackground(bgUrl) {
-            document.body.style.backgroundImage = `linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 1)), url('${bgUrl}')`;
+            document.body.style.backgroundImage = `linear-gradient(rgba(13, 17, 23, 0.7), rgba(13, 17, 23, 0.8)), url('${bgUrl}')`;
             state.customization.background = bgUrl;
             saveState();
         }
@@ -1443,34 +1470,38 @@
             if (suggestionBtn) {
                 addTask(suggestionBtn.textContent);
             }
+            if (e.target.id === 'clear-ai-suggestions') {
+                suggestionsContainer.innerHTML = '';
+            }
         });
 
         taskList.addEventListener('click', (e) => {
             const target = e.target;
-            const taskItem = target.closest('.task-card');
-            if(!taskItem) return;
+            const checkboxLabel = target.closest('label[for^="task-"]');
             
-            const checkbox = target.closest('input[type="checkbox"]');
-            const deleteBtn = target.closest('.delete-btn');
-            const viewProofBtn = target.closest('.view-proof-btn');
-            const startBtn = target.closest('.start-timer-btn');
-            const pauseBtn = target.closest('.pause-timer-btn');
-            const resetBtn = target.closest('.reset-timer-btn');
+            if (checkboxLabel) {
+                const checkbox = document.getElementById(checkboxLabel.getAttribute('for'));
+                if (checkbox && !checkbox.disabled) {
+                    const index = parseInt(checkbox.dataset.index);
+                    toggleTask(index, checkbox);
+                }
+                return;
+            }
 
-            const index = Array.from(taskList.children).indexOf(taskItem);
-
-            if (checkbox) {
-                toggleTask(index, checkbox);
-            } else if (deleteBtn) {
-                deleteTask(index);
-            } else if (viewProofBtn) {
-                openViewProofModal(index);
-            } else if (startBtn) {
-                startTimer(index);
-            } else if (pauseBtn) {
-                pauseTimer(index);
-            } else if (resetBtn) {
-                resetTimer(index);
+            const button = target.closest('button[data-index]');
+            if (button) {
+                const index = parseInt(button.dataset.index);
+                if (button.classList.contains('delete-btn')) {
+                    deleteTask(index);
+                } else if (button.classList.contains('view-proof-btn')) {
+                    openViewProofModal(index);
+                } else if (button.classList.contains('start-timer-btn')) {
+                    startTimer(index);
+                } else if (button.classList.contains('pause-timer-btn')) {
+                    pauseTimer(index);
+                } else if (button.classList.contains('reset-timer-btn')) {
+                    resetTimer(index);
+                }
             }
         });
         
@@ -1575,7 +1606,7 @@
         
         // Shop Listeners
         buyStreakFreezeBtn.addEventListener('click', () => {
-            const price = 100;
+            const price = 50;
             if (state.gems >= price) {
                 state.gems -= price;
                 state.streakFreezes++;
